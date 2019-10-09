@@ -13,10 +13,13 @@ def map_to_no_change(source_array)
 end
 
 def map_to_double(source_array)
-  new_array = []
-  new_array = source_array.map do |a| a*2 
-end
-new_array
+  new_array = [] 
+  element = 0
+  while element < source_array.size do 
+    new_array.push(source_array[element] * 2)
+    element = element+1 
+  end
+  new_array
 end
 
 def map_to_square(source_array)
